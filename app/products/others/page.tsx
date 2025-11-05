@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function OtherProductsPage() {
   const productTable = [
@@ -8,11 +9,19 @@ export default function OtherProductsPage() {
   ];
   return (
     <div className="min-h-screen">
-      <section className="relative h-[300px] bg-gradient-to-r from-purple-600 to-orange-500 flex items-center">
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-white">
-          <h1 className="text-5xl font-bold mb-4">Other Specialty Chemicals</h1>
-          <p className="text-xl">Diverse Solutions for Various Industries</p>
+      <section className="relative h-[300px] overflow-hidden">
+        <ImageWithFallback
+          src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=1600&auto=format&fit=crop&q=70"
+          alt="Other Specialty Chemicals"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="hero-overlay" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center text-white">
+          <div>
+            <h1 className="text-5xl font-bold mb-4">Other Specialty Chemicals</h1>
+            <p className="text-xl">Diverse Solutions for Various Industries</p>
+          </div>
         </div>
       </section>
 
@@ -37,22 +46,24 @@ export default function OtherProductsPage() {
                 MBT's excellent penetration powers make it the preferred biocide in applications such as wood and leather preservation and other applications like cooling water systems, paints, surface coatings and adhesives.
               </p>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop" 
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl bg-gray-200">
+              <ImageWithFallback 
+                src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&auto=format&fit=crop&q=70" 
                 alt="MBT Biocide" 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
           
           {/* Acetyl Chloride Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl order-2 lg:order-1">
-              <img 
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop" 
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl order-2 lg:order-1 bg-gray-200">
+              <ImageWithFallback 
+                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&auto=format&fit=crop&q=70" 
                 alt="Acetyl Chloride" 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
             <div className="order-1 lg:order-2">

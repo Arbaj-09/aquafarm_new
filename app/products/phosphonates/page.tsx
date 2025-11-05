@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function PhosphonatesPage() {
   const productCategories = [
@@ -47,11 +48,19 @@ export default function PhosphonatesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[300px] bg-gradient-to-r from-purple-600 to-orange-500 flex items-center">
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-white">
-          <h1 className="text-5xl font-bold mb-4">Phosphonates</h1>
-          <p className="text-xl">High-Performance Scale and Corrosion Inhibitors</p>
+      <section className="relative h-[300px] overflow-hidden">
+        <ImageWithFallback
+          src="/images/Phosphonates.jpg"
+          alt="Phosphonates"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="hero-overlay" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center text-white">
+          <div>
+            <h1 className="text-5xl font-bold mb-4">Phosphonates</h1>
+            <p className="text-xl">High-Performance Scale and Corrosion Inhibitors</p>
+          </div>
         </div>
       </section>
 
@@ -75,18 +84,20 @@ export default function PhosphonatesPage() {
               </p>
             </div>
             <div className="space-y-6">
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&h=600&fit=crop" 
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl bg-gray-200">
+                <ImageWithFallback 
+                  src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&auto=format&fit=crop&q=70" 
                   alt="Phosphonate products" 
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&h=600&fit=crop" 
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl bg-gray-200">
+                <ImageWithFallback 
+                  src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=1200&auto=format&fit=crop&q=70" 
                   alt="Chemical manufacturing" 
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

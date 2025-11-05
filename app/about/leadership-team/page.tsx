@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function LeadershipTeamPage() {
   const leaders = [
@@ -14,7 +15,7 @@ export default function LeadershipTeamPage() {
       position: 'Vice Chairman',
       title: 'The Vice Chairman',
       description: 'Mr. Shashwat Goenka is the Vice Chairman of the RP-Sanjiv Goenka Group. He is the Chairman of Spencer\'s Retail and Director & Vice Chairman of CESC Limited and Firstsource Solutions Ltd.',
-      image: 'https://www.fortuneindia.com/madmin/content/uploads/2021/07/Shashwat_Goenka.jpg',
+      image: '/images/goenka.webp',
     },
   ];
 
@@ -22,12 +23,13 @@ export default function LeadershipTeamPage() {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[300px] overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&h=300&fit=crop" 
+        <ImageWithFallback 
+          src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51?w=1920&auto=format&fit=crop&q=70" 
           alt="Leadership Team" 
           className="w-full h-full object-cover"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="hero-overlay" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center text-white">
           <div>
             <h1 className="text-5xl font-bold mb-4">Leadership Team</h1>
@@ -47,10 +49,12 @@ export default function LeadershipTeamPage() {
               >
                 <div className="lg:w-2/5 flex justify-center">
                   <div className="relative w-80 h-96 rounded-lg overflow-hidden shadow-2xl">
-                    <img 
+                    <ImageWithFallback 
                       src={leader.image} 
                       alt={leader.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover bg-gray-200"
+                      loading="lazy"
+                      fallbackSrc="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=800&auto=format&fit=crop&q=70"
                     />
                   </div>
                 </div>

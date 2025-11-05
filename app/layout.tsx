@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import PremiumNavbar from "@/components/PremiumNavbar";
+import PremiumFooter from "@/components/PremiumFooter";
+import ScrollObserver from "@/components/ScrollObserver";
 
 export const metadata: Metadata = {
-  title: "Aquapharm - Leading Specialty Chemicals Manufacturer",
-  description: "Aquapharm is a leading manufacturer of specialty chemicals, serving industries across the globe with innovative and sustainable solutions.",
+  title: "Aquapharm Chemical Limited - Premium Global Specialty Chemicals",
+  description: "Leading global manufacturer of specialty chemicals with 40+ years of excellence. Serving 50+ countries with innovative solutions in water treatment, oilfield chemicals, and industrial applications.",
 };
 
 export default function RootLayout({
@@ -16,9 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <ScrollObserver />
+        <PremiumNavbar />
+        <main className="pt-20">
+          {children}
+        </main>
+        <PremiumFooter />
         <script
           dangerouslySetInnerHTML={{
             __html: `

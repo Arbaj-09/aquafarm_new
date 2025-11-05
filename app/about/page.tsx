@@ -1,17 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[500px] overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&h=500&fit=crop" 
+        <ImageWithFallback 
+          src="/images/Aquapharm Chemical.jpg" 
           alt="About Aquapharm" 
           className="w-full h-full object-cover"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="hero-overlay" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-white max-w-3xl">
             <h1 className="text-5xl font-bold mb-4">About Aquapharm</h1>
@@ -42,11 +44,12 @@ export default function AboutPage() {
                 Aquapharm Chemical Limited is a part of RP-Sanjiv Goenka Group. To know more about the Group, visit: <a href="https://www.rpsg.in" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">www.rpsg.in</a>
               </p>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=800&h=600&fit=crop" 
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl bg-gray-200">
+              <ImageWithFallback 
+                src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=1200&auto=format&fit=crop&q=70" 
                 alt="Chemical manufacturing facility" 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

@@ -1,11 +1,18 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function TextilesPage() {
   return (
     <div className="min-h-screen">
-      <section className="relative h-[300px] bg-gradient-to-r from-purple-600 to-orange-500 flex items-center">
+      <section className="relative h-[300px] overflow-hidden">
+        <ImageWithFallback
+          src="https://s7d9.scene7.com/is/image/dow/AdobeStock_220684959?qlt=82&ts=1749740329647&dpr=off"
+          alt="Textile industry hero"
+          className="w-full h-full object-cover bg-gray-200"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-white">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-white flex items-center h-full">
           <h1 className="text-5xl font-bold mb-4">Textiles</h1>
           <p className="text-xl">Chemical Solutions for Textile Processing</p>
         </div>
@@ -24,11 +31,12 @@ export default function TextilesPage() {
                 Maxinol polymers are used during dyeing and printing with metallised dyes so that the salts are chelated without effecting the heavy metals in the dye.
               </p>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1558769132-cb1aea1f5c53?w=800&h=600&fit=crop" 
-                alt="Textile manufacturing" 
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl bg-gray-200">
+              <ImageWithFallback
+                src="https://srishchem.com/wp-content/uploads/2025/09/pretrat.682Z.webp"
+                alt="Textile pretreatment"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

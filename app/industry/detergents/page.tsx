@@ -1,15 +1,17 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function DetergentsPage() {
   return (
     <div className="min-h-screen">
       <section className="relative h-[300px] overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=1920&h=300&fit=crop" 
+        <ImageWithFallback 
+          src="/images/Detergents hero.jpg" 
           alt="Detergents" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover bg-gray-200"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="hero-overlay" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center text-white">
           <div>
             <h1 className="text-5xl font-bold mb-4">Detergents</h1>
@@ -34,11 +36,12 @@ export default function DetergentsPage() {
                 Aquapharm Maxinol polymers are used to disperse the dirt removed from fabric and prevent its re-deposition.
               </p>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl scroll-fade-in-right">
-              <img 
-                src="https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=800&h=600&fit=crop" 
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl scroll-fade-in-right bg-gray-200">
+              <ImageWithFallback 
+                src="/images/Detergents.jpg" 
                 alt="Detergent products" 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

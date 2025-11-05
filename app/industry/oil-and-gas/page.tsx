@@ -1,13 +1,22 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function OilAndGasPage() {
   return (
     <div className="min-h-screen">
-      <section className="relative h-[300px] bg-gradient-to-r from-purple-600 to-orange-500 flex items-center">
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-white">
-          <h1 className="text-5xl font-bold mb-4">Oil and Gas</h1>
-          <p className="text-xl">Specialty Chemicals for Oil & Gas Operations</p>
+      <section className="relative h-[300px] overflow-hidden">
+        <ImageWithFallback 
+          src="/images/oil and gas.jpg" 
+          alt="Oil and gas operations hero" 
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="hero-overlay" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center text-white">
+          <div>
+            <h1 className="text-5xl font-bold mb-4">Oil and Gas</h1>
+            <p className="text-xl">Specialty Chemicals for Oil & Gas Operations</p>
+          </div>
         </div>
       </section>
       <section className="py-16 bg-white">
@@ -29,11 +38,12 @@ export default function OilAndGasPage() {
                 Our products offer various benefits like scale minimization, product optimization, inhibition and dispersion of carbonate and sulphate scales and other difficult scales.
               </p>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <img 
-                src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800&h=600&fit=crop" 
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl bg-gray-200">
+              <ImageWithFallback 
+                src="/images/oil and gas.jpg" 
                 alt="Oil and gas operations" 
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

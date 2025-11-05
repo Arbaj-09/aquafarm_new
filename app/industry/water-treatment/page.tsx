@@ -1,13 +1,15 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function WaterTreatmentPage() {
   return (
     <div className="min-h-screen">
       <section className="relative h-[300px] overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1581093458791-9d42e44d1035?w=1920&h=300&fit=crop" 
-          alt="Water Treatment" 
-          className="w-full h-full object-cover"
+        <ImageWithFallback
+          src="https://bisan.in/images/water-effluent-treatment-chemicals-1.jpg"
+          alt="Water Treatment"
+          className="w-full h-full object-cover bg-gray-200"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-black/20" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center text-white">
@@ -32,11 +34,12 @@ export default function WaterTreatmentPage() {
                 Aquapharm supplies wide range of industrial water treatment chemicals for various scale control, corrosion control and biofouling for applications like Open ; Closed cooling tower water treatment, Reverse Osmosis Process, Thermal desalination treatment etc.
               </p>
             </div>
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl scroll-fade-in-right">
-              <img 
-                src="https://images.unsplash.com/photo-1581093458791-9d42e44d1035?w=800&h=600&fit=crop" 
-                alt="Water treatment facility" 
+            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl scroll-fade-in-right bg-gray-200">
+              <ImageWithFallback
+                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&h=600&q=70"
+                alt="Water treatment facility"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

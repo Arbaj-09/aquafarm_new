@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function PolymersPage() {
   const productTable = [
@@ -13,12 +14,13 @@ export default function PolymersPage() {
   return (
     <div className="min-h-screen">
       <section className="relative h-[300px] overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1920&h=300&fit=crop" 
+        <ImageWithFallback 
+          src="/images/poymers hero.jpg" 
           alt="Polymers" 
           className="w-full h-full object-cover"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="hero-overlay" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center text-white">
           <div>
             <h1 className="text-5xl font-bold mb-4">Polymers</h1>
@@ -49,18 +51,20 @@ export default function PolymersPage() {
               </p>
             </div>
             <div className="space-y-6 scroll-fade-in-right">
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&h=600&fit=crop" 
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl bg-gray-200">
+                <ImageWithFallback 
+                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&auto=format&fit=crop&q=70" 
                   alt="Polymer manufacturing" 
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
-              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=600&fit=crop" 
+              <div className="relative h-64 rounded-lg overflow-hidden shadow-xl bg-gray-200">
+                <ImageWithFallback 
+                  src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&auto=format&fit=crop&q=70" 
                   alt="Chemical products" 
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

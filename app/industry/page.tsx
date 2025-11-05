@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function IndustryPage() {
   const industries = [
@@ -13,11 +14,19 @@ export default function IndustryPage() {
 
   return (
     <div className="min-h-screen">
-      <section className="relative h-[400px] bg-gradient-to-r from-purple-600 to-orange-500 flex items-center">
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-white">
-          <h1 className="text-5xl font-bold mb-4">Industries We Serve</h1>
-          <p className="text-xl">Globally trusted for quality products</p>
+      <section className="relative h-[400px] overflow-hidden">
+        <ImageWithFallback
+          src="https://images.unsplash.com/photo-1520697222862-355cda3a0385?w=1920&auto=format&fit=crop&q=70"
+          alt="Industries We Serve"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="hero-overlay" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center text-white">
+          <div>
+            <h1 className="text-5xl font-bold mb-4">Industries We Serve</h1>
+            <p className="text-xl">Globally trusted for quality products</p>
+          </div>
         </div>
       </section>
 

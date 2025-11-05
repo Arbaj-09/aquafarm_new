@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function CSRPage() {
   const statistics = [
@@ -31,12 +32,13 @@ export default function CSRPage() {
     <div className="min-h-screen">
       {/* Hero Banner with Image */}
       <section className="relative h-[500px] overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=1920&h=500&fit=crop" 
+        <ImageWithFallback 
+          src="https://images.unsplash.com/photo-1520975693415-1a54e9a0f9e4?w=1920&auto=format&fit=crop&q=70" 
           alt="Corporate Social Responsibility" 
           className="w-full h-full object-cover"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="hero-overlay" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-white">
             <h1 className="text-5xl font-bold mb-4">Corporate Social Responsibility</h1>

@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function InvestorRelationsPage() {
   const regulation62Disclosures = [
@@ -31,12 +32,13 @@ export default function InvestorRelationsPage() {
     <div className="min-h-screen">
       {/* Hero Banner with Image */}
       <section className="relative h-[500px] overflow-hidden">
-        <img 
-          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&h=500&fit=crop" 
+        <ImageWithFallback 
+          src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1920&auto=format&fit=crop&q=70" 
           alt="Investor Relations" 
           className="w-full h-full object-cover"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="hero-overlay" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-white">
             <h1 className="text-5xl font-bold mb-4">Investor Relations</h1>
