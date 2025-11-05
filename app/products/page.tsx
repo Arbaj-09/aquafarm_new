@@ -36,7 +36,7 @@ export default function ProductsPage() {
       {/* Hero Section */}
       <section className="relative h-[400px] overflow-hidden">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1582719436049-9380afd0d5aa?w=1920&auto=format&fit=crop&q=70"
+          src="/images/lajuanna-whittington-IwKlh8UU1M8-unsplash.jpg"
           alt="Our Products"
           className="w-full h-full object-cover"
           loading="eager"

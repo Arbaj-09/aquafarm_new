@@ -6,7 +6,7 @@ export default function OilAndGasPage() {
     <div className="min-h-screen">
       <section className="relative h-[300px] overflow-hidden">
         <ImageWithFallback 
-          src="/images/oil and gas.jpg" 
+          src="https://images.unsplash.com/photo-1624905181196-4ee8cb2522c8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1384" 
           alt="Oil and gas operations hero" 
           className="w-full h-full object-cover"
           loading="eager"
@@ -40,7 +40,7 @@ export default function OilAndGasPage() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl bg-gray-200">
               <ImageWithFallback 
-                src="/images/oil and gas.jpg" 
+                src="/images/christian-harb-76yzygeNLT0-unsplash.jpg" 
                 alt="Oil and gas operations" 
                 className="w-full h-full object-cover"
                 loading="lazy"

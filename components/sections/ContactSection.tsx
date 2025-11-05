@@ -82,7 +82,7 @@ export default function ContactSection() {
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 whileHover={{ scale: 1.05 }}
-                className="glass-light p-6 rounded-2xl"
+                className="p-6 rounded-2xl bg-white/15 backdrop-blur-xl border border-white/25 shadow-xl"
               >
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-gold flex items-center justify-center">
@@ -105,7 +105,7 @@ export default function ContactSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.4 }}
-              className="glass-light p-6 rounded-2xl text-center"
+              className="p-6 rounded-2xl text-center bg-white/15 backdrop-blur-xl border border-white/25 shadow-xl"
             >
               <div className="text-4xl font-bold text-accent mb-2">24/7</div>
               <p className="text-white font-semibold mb-1">Global Support</p>

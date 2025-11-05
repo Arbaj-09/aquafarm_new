@@ -8,8 +8,8 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative h-[500px] overflow-hidden">
         <ImageWithFallback 
-          src="/images/Aquapharm Chemical.jpg" 
-          alt="About Aquapharm" 
+          src="/images/valeriia-miller-vXanaClNzQA-unsplash.jpg" 
+          alt="Aquapharm manufacturing and supply chain" 
           className="w-full h-full object-cover"
           loading="eager"
         />

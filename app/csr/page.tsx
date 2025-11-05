@@ -33,7 +33,7 @@ export default function CSRPage() {
       {/* Hero Banner with Image */}
       <section className="relative h-[500px] overflow-hidden">
         <ImageWithFallback 
-          src="https://images.unsplash.com/photo-1520975693415-1a54e9a0f9e4?w=1920&auto=format&fit=crop&q=70" 
+          src="/images/csr hero.jpg" 
           alt="Corporate Social Responsibility" 
           className="w-full h-full object-cover"
           loading="eager"

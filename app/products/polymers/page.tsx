@@ -15,8 +15,8 @@ export default function PolymersPage() {
     <div className="min-h-screen">
       <section className="relative h-[300px] overflow-hidden">
         <ImageWithFallback 
-          src="/images/poymers hero.jpg" 
-          alt="Polymers" 
+          src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1920&auto=format&fit=crop&q=80" 
+          alt="Polymer products and manufacturing" 
           className="w-full h-full object-cover"
           loading="eager"
         />

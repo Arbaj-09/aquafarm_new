@@ -6,8 +6,8 @@ export default function DetergentsPage() {
     <div className="min-h-screen">
       <section className="relative h-[300px] overflow-hidden">
         <ImageWithFallback 
-          src="/images/Detergents hero.jpg" 
-          alt="Detergents" 
+          src="https://images.unsplash.com/photo-1590096227076-ebf4b077c89d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" 
+          alt="Detergent manufacturing environment" 
           className="w-full h-full object-cover bg-gray-200"
           loading="eager"
         />
@@ -38,7 +38,7 @@ export default function DetergentsPage() {
             </div>
             <div className="relative h-96 rounded-lg overflow-hidden shadow-xl scroll-fade-in-right bg-gray-200">
               <ImageWithFallback 
-                src="/images/Detergents.jpg" 
+                src="/images/adhitya-sibikumar-Jj8-Q0kekCo-unsplash.jpg" 
                 alt="Detergent products" 
                 className="w-full h-full object-cover"
                 loading="lazy"

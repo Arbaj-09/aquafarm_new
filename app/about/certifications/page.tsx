@@ -21,21 +21,9 @@ export default function CertificationsPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative h-[500px] overflow-hidden">
-        <ImageWithFallback 
-          src="/images/certification hero.jpg" 
-          alt="Certifications" 
-          className="w-full h-full object-cover"
-          loading="eager"
-        />
-        <div className="hero-overlay" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex items-center">
-          <div className="text-white">
-            <h1 className="text-5xl font-bold mb-4">Certifications</h1>
-            <p className="text-2xl">Quality Assured, Globally Recognized</p>
-          </div>
-        </div>
+      {/* Hero Section (Text-only) */}
+      <section className="relative h-[400px] flex items-center justify-center bg-hero-deepteal">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white text-3d-horizontal tracking-wide">CERTIFICATE</h1>
       </section>
 
       {/* Introduction */}

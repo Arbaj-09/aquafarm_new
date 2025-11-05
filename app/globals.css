@@ -187,9 +187,44 @@ a {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(2,6,23,0.35) 0%, rgba(2,6,23,0.15) 100%);
+  background: linear-gradient(180deg, rgba(2,6,23,0.6) 0%, rgba(2,6,23,0.35) 100%);
 }
 
 /* Subtle motion utilities */
 .reveal { opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* 3D horizontal text utility */
+.text-3d-horizontal {
+  text-shadow:
+    1px 0 0 rgba(0,0,0,0.25),
+    2px 0 0 rgba(0,0,0,0.2),
+    3px 0 0 rgba(0,0,0,0.15),
+    4px 0 0 rgba(0,0,0,0.1),
+    6px 0 12px rgba(0,0,0,0.35);
+}
+
+/* Multicolor 3D text variant */
+.text-3d-rainbow {
+  text-shadow:
+    1px 0 0 rgba(249,115,22,0.6),   /* orange */
+    2px 0 0 rgba(147,51,234,0.6),   /* purple */
+    3px 0 0 rgba(14,165,233,0.6),   /* sky */
+    4px 0 0 rgba(2,6,23,0.35),      /* dark */
+    6px 0 12px rgba(2,6,23,0.45);
+}
+
+/* Brandful angular gradient for heroes */
+.bg-hero-brand {
+  background: linear-gradient(135deg, #0ea5e9 0%, #7c3aed 50%, #f59e0b 100%);
+}
+
+/* Single-color light aquamarine hero background */
+.bg-hero-aqua {
+  background-color: #7fffd4; /* aquamarine */
+}
+
+/* Single-color deep teal hero background */
+.bg-hero-deepteal {
+  background-color: #005F6B; /* Deep Teal / Dark Cyan Blue */
+}
