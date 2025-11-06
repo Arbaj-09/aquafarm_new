@@ -28,14 +28,14 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="mb-6"
           >
-            <span className="inline-block px-6 py-2 glass-ultra text-[#FFD166] font-semibold rounded-full mb-6 text-sm tracking-wide">Premium Global Solutions</span>
+            <span className="inline-block px-5 py-1.5 glass-ultra text-[#FFD166] font-semibold rounded-full mb-5 text-xs tracking-wide">Premium Global Solutions</span>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 leading-tight"
+            className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-5 leading-tight"
           >
             Aquapharm Chemical Limited
           </motion.h1>
@@ -44,7 +44,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-base md:text-lg text-gray-200 mb-7 max-w-3xl mx-auto leading-relaxed"
           >
             Pioneering global excellence in specialty chemicals with 40+ years of innovation, 
             sustainability, and world-class manufacturing
@@ -93,12 +93,12 @@ export default function HeroSection() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-                className="glass-ultra p-5 rounded-2xl"
+                className="glass-ultra p-4 rounded-2xl"
               >
-                <div className="text-3xl md:text-4xl font-heading font-bold text-[#FFD166] mb-1">
+                <div className="text-2xl md:text-3xl font-heading font-bold text-[#FFD166] mb-1">
                   {stat.value}
                 </div>
-                <div className="text-xs md:text-sm text-gray-200">{stat.label}</div>
+                <div className="text-[11px] md:text-xs text-gray-200">{stat.label}</div>
               </motion.div>
             ))}
           </motion.div>

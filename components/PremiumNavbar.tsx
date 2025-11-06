@@ -94,26 +94,26 @@ export default function PremiumNavbar() {
           scrolled ? 'py-3' : 'py-6'
         }`}
       >
-        <div className="container mx-auto px-6 lg:px-12">
+        <div className="container mx-auto px-3 lg:px-6">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <motion.div
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-3"
             >
-              <div className="w-12 h-12 rounded-full glass-ultra flex items-center justify-center shadow-lg">
+              <div className="w-8 h-8 xl:w-12 xl:h-12 rounded-full glass-ultra flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-xl">A</span>
               </div>
               <div>
-                <h1 className="text-white font-heading font-bold text-xl lg:text-2xl">
+                <h1 className="text-white font-heading font-bold text-[13px] xl:text-2xl whitespace-nowrap tracking-tight">
                   Aquapharm Chemical
                 </h1>
-                <p className="text-secondary text-xs font-light">Premium Global Solutions</p>
+                <p className="text-secondary text-[10px] xl:text-xs font-light hidden xl:block">Premium Global Solutions</p>
               </div>
             </motion.div>
 
             {/* Desktop Menu */}
-            <div ref={dropdownRef} className="hidden lg:flex items-center space-x-8">
+            <div ref={dropdownRef} className="hidden lg:flex items-center space-x-2.5 xl:space-x-6">
               {menuItems.map((item, index) => (
                 <div
                   key={item.name}
@@ -129,7 +129,7 @@ export default function PremiumNavbar() {
                   >
                     <Link
                       href={item.href}
-                      className="text-white font-medium text-sm tracking-wide hover:text-accent transition-all duration-300 relative group flex items-center space-x-1 cursor-pointer"
+                      className="text-white font-medium text-[10px] xl:text-sm tracking-tight hover:text-accent transition-all duration-300 relative group flex items-center space-x-1 cursor-pointer"
                     >
                       <span>{item.name}</span>
                       {item.dropdown && (
@@ -179,9 +179,9 @@ export default function PremiumNavbar() {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className=""
+                className="ml-2 shrink-0"
               >
-                <Link href="/sales-enquiry" className="px-6 py-2.5 bg-gradient-gold text-primary font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:animate-glow">
+                <Link href="/sales-enquiry" className="px-3.5 py-1 text-[11px] xl:px-6 xl:py-2.5 xl:text-base whitespace-nowrap bg-gradient-gold text-primary font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:animate-glow">
                   Get Quote
                 </Link>
               </motion.div>

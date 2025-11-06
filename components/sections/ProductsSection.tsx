@@ -66,14 +66,14 @@ export default function ProductsSection() {
           <span className="inline-block px-6 py-2 bg-primary/10 text-primary font-semibold rounded-full mb-6 text-sm">
             Our Products
           </span>
-          <h2 className="text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
             Comprehensive Chemical
             <br />
             <span className="bg-gradient-premium bg-clip-text text-transparent">
               Product Portfolio
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Innovative specialty chemicals designed to meet the evolving needs of global industries
           </p>
         </motion.div>

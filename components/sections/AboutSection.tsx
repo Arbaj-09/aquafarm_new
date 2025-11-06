@@ -54,18 +54,6 @@ export default function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-transparent"></div>
             </div>
             
-            {/* Floating badge */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={inView ? { opacity: 1, scale: 1 } : {}}
-              transition={{ delay: 0.4, duration: 0.5 }}
-              className="absolute -bottom-8 -right-8 glass-light p-8 rounded-3xl shadow-2xl"
-            >
-              <div className="text-center">
-                <div className="text-5xl font-bold text-primary mb-2">40+</div>
-                <div className="text-sm text-gray-700 font-semibold">Years of Excellence</div>
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* Right: Content */}
@@ -83,14 +71,14 @@ export default function AboutSection() {
               <span className="bg-gradient-gold bg-clip-text text-transparent"> Specialty Chemicals</span>
             </h2>
             
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-700 mb-6 leading-relaxed">
               Aquapharm Chemical Limited, part of the prestigious <strong>RP-Sanjiv Goenka Group</strong>, 
               stands as a beacon of excellence in specialty chemical manufacturing. With over four decades 
               of unwavering commitment to innovation and quality, we have established ourselves as a trusted 
               global partner.
             </p>
             
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-sm md:text-base text-gray-700 mb-8 leading-relaxed">
               Our state-of-the-art facilities in <strong>Pune, Mahad, Pirangut, and USA</strong>, combined 
               with a robust global distribution network, enable us to deliver world-class products and 
               services to industries across water treatment, oil & gas, textile, and more.

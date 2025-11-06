@@ -70,14 +70,14 @@ export default function FacilitiesSection() {
           <span className="inline-block px-6 py-2 bg-secondary/10 text-secondary font-semibold rounded-full mb-6 text-sm">
             Global Presence
           </span>
-          <h2 className="text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-primary mb-6">
             World-Class
             <br />
             <span className="bg-gradient-premium bg-clip-text text-transparent">
               Manufacturing Facilities
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Strategic locations across continents enabling rapid delivery and exceptional service
           </p>
         </motion.div>
