@@ -37,10 +37,10 @@ export default function PremiumFooter() {
                 <motion.a
                   key={i}
                   href="#"
-                  whileHover={{ scale: 1.2, y: -2 }}
-                  className="w-10 h-10 rounded-full glass-light flex items-center justify-center hover:bg-secondary transition-all"
+                  whileHover={{ scale: 1.15, y: -2 }}
+                  className="w-12 h-12 rounded-full glass-tint-teal flex items-center justify-center transition-all"
                 >
-                  <Icon className="text-lg" />
+                  <Icon className="text-xl text-accent" />
                 </motion.a>
               ))}
             </div>
@@ -100,7 +100,7 @@ export default function PremiumFooter() {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-6 inline-block px-6 py-2.5 bg-gradient-gold text-primary font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
+              className="mt-6 inline-block px-6 py-2.5 glass-tint-teal text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all"
             >
               Get in Touch
             </motion.a>

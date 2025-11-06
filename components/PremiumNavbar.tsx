@@ -101,7 +101,7 @@ export default function PremiumNavbar() {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-3"
             >
-              <div className="w-12 h-12 rounded-full bg-gradient-premium flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 rounded-full glass-ultra flex items-center justify-center shadow-lg">
                 <span className="text-white font-bold text-xl">A</span>
               </div>
               <div>

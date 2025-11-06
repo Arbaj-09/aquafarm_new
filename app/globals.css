@@ -42,6 +42,24 @@ body {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
 }
 
+/* More transparent glass for hero pills/buttons/cards */
+.glass-ultra {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 10px 40px rgba(2, 6, 23, 0.25);
+}
+
+/* Teal-tinted transparent glass for CTA + social icons */
+.glass-tint-teal {
+  background: rgba(0, 95, 107, 0.18); /* #005F6B with transparency */
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 10px 40px rgba(2, 6, 23, 0.25);
+}
+
 /* Scroll-triggered animations */
 .scroll-fade-in {
   opacity: 0;

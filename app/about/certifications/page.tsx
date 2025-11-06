@@ -23,7 +23,9 @@ export default function CertificationsPage() {
     <div className="min-h-screen">
       {/* Hero Section (Text-only) */}
       <section className="relative h-[400px] flex items-center justify-center bg-hero-deepteal">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-white text-3d-horizontal tracking-wide">CERTIFICATE</h1>
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white text-3d-horizontal tracking-wide">
+          <span className="glass-ultra px-8 py-3 rounded-full inline-block">CERTIFICATE</span>
+        </h1>
       </section>
 
       {/* Introduction */}

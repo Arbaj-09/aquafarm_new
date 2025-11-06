@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden pt-20">
+    <section id="home" className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden pt-20 pb-16 md:pb-24">
       {/* Background image with subtle overlay */}
       <div className="absolute inset-0 -z-10">
         <ImageWithFallback
@@ -28,7 +28,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8 }}
             className="mb-6"
           >
-            <span className="inline-block px-6 py-2 glass-light text-[#FFD166] font-semibold rounded-full mb-6 text-sm tracking-wide">Premium Global Solutions</span>
+            <span className="inline-block px-6 py-2 glass-ultra text-[#FFD166] font-semibold rounded-full mb-6 text-sm tracking-wide">Premium Global Solutions</span>
           </motion.div>
 
           <motion.h1
@@ -68,7 +68,7 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link href="/about" className="px-10 py-4 glass-light text-white font-semibold rounded-full text-lg flex items-center space-x-3 group">
+              <Link href="/about" className="px-10 py-4 glass-ultra text-white font-semibold rounded-full text-lg flex items-center space-x-3 group">
                 <FaInfoCircle className="text-sm" />
                 <span>Learn More</span>
               </Link>
@@ -93,7 +93,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
-                className="glass-light p-5 rounded-2xl"
+                className="glass-ultra p-5 rounded-2xl"
               >
                 <div className="text-3xl md:text-4xl font-heading font-bold text-[#FFD166] mb-1">
                   {stat.value}

@@ -1,11 +1,18 @@
 import React from 'react';
+import ImageWithFallback from '@/components/ImageWithFallback';
 
 export default function IndustrialCleanersPage() {
   return (
     <div className="min-h-screen">
-      <section className="relative h-[300px] bg-gradient-to-r from-purple-600 to-orange-500 flex items-center">
-        <div className="absolute inset-0 bg-black/30" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-white">
+      <section className="relative h-[300px] overflow-hidden">
+        <ImageWithFallback
+          src="/images/industrial cleaners.jpg"
+          alt="Industrial cleaning"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+        <div className="hero-overlay" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-white h-full flex items-center">
           <h1 className="text-5xl font-bold mb-4">Industrial Cleaners</h1>
           <p className="text-xl">Powerful Cleaning Solutions</p>
         </div>

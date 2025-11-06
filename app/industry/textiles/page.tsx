@@ -6,15 +6,19 @@ export default function TextilesPage() {
     <div className="min-h-screen">
       <section className="relative h-[300px] overflow-hidden">
         <ImageWithFallback
-          src="https://s7d9.scene7.com/is/image/dow/AdobeStock_220684959?qlt=82&ts=1749740329647&dpr=off"
+          src="/images/textile hero.jpg"
           alt="Textile industry hero"
           className="w-full h-full object-cover bg-gray-200"
-          loading="lazy"
+          loading="eager"
         />
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="hero-overlay" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-white flex items-center h-full">
-          <h1 className="text-5xl font-bold mb-4">Textiles</h1>
-          <p className="text-xl">Chemical Solutions for Textile Processing</p>
+          <div>
+            <h1 className="text-5xl font-extrabold text-3d-horizontal mb-3">
+              <span className="glass-ultra px-6 py-2 rounded-full inline-block">Textiles</span>
+            </h1>
+            <p className="text-xl">Chemical Solutions for Textile Processing</p>
+          </div>
         </div>
       </section>
       <section className="py-16 bg-white">

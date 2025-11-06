@@ -59,7 +59,7 @@ export default function ContactSection() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           className="text-center mb-16"
         >
-          <span className="inline-block px-6 py-2 glass-light text-accent font-semibold rounded-full mb-6 text-sm">
+          <span className="inline-block px-6 py-2 glass-ultra text-accent font-semibold rounded-full mb-6 text-sm">
             Get In Touch
           </span>
           <h2 className="text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
